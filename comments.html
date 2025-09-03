@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Comments</title>
+		<link rel="stylesheet" href="websystems.css">
+		</head>
+		<body>
+			<div id="header">
+			<ul class="navbar">
+				<!-- Image source: Fortnite Llama icon downloaded from https://icons8.com/icons/set/fortnite-battle-pass-in -->
+				<li><img src="images/fn.png" width="45" alt="Photo of Fortnite Llama"></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="past.html">Past</a></li>
+				<li><a href="future.html">Future</a></li>
+				<li><a href="comments.html" class="active">Comments</a></li>
+			</ul> 
+		</div>
+		<div id="content">
+		<h1>Comments</h1>
+        
+		<div class="section-box">
+		<h2>Overall Structure of the Website</h2>
+			<p>The website consists of four main HTML pages:</p>
+			<ul>
+				<li><b>Home (index.html)</b> - An introduction and overview.</li>
+				<li><b>Past (past.html)</b> - Highlights past experiences with computing and achievements.</li>
+				<li><b>Future (future.html)</b> - Outlines career goals and aspirations.</li>
+				<li><b>Comments (comments.html)</b> - An analysis of the site's structure and design.</li>
+			</ul>
+			<p>Each page links to the others through a shared navigation bar, allowing users to switch easily between them. The structure is user-friendly and keeps all pages connected logically.</p>
+		
+		<h2>Internal Structure of Each Web Page</h2>
+			<h3>Header (<code>&lt;div id="header"&gt;</code>)</h3>
+			<img src="images/header.png" alt="HTML code of the header section" width="400">
+			<ul>
+				<li>Contains a horizontal navigation menu.</li>
+				<li>Includes a small image (Fortnite Llama) and links to each of the main pages.</li>
+				<li>Navigation uses the <code>.navbar</code> class for layout and styling.</li>
+			</ul>
+		
+            <h3>Content Section (<code>&lt;div id="content"&gt;</code>)</h3>
+			<ul>
+				<li>Holds the unique content of each page.</li>
+				<li>Uses <code>id="content"</code> to apply consistent width and padding.</li>
+				<li>Includes structured content with headings (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>), paragraphs, lists, and images.</li>
+			</ul>
+			<img src="images/content.png" alt="HTML code of the content section" width="400">
+
+			<h3>Footer (<code>&lt;div id="footer"&gt;</code>)</h3>
+			<ul>
+				<li>Appears at the bottom of every page.</li>
+				<li>Contains copyright.</li>
+				<li>Styled with a dark background and centered text.</li>
+			</ul>
+			<img src="images/footer.png" alt="HTML code of the footer section" width="400">
+
+			<p><strong>Why it matters:</strong> This structure separates content clearly and makes the site easy to read, navigate, and maintain. It also supports accessibility and responsiveness across different devices.</p>
+
+			<h2>Styles Used</h2>
+			<p>All styling is handled in the <code>websystems.css</code> file. Here's a summary of key styles:</p>
+			<table class="data">
+				<tr><th>Selector</th><th>Type</th><th>Purpose</th><th>Where It's Used</th></tr>
+				<tr><td>body</td><td>Element</td><td>Sets background, font, and spacing</td><td>All pages</td></tr>
+				<tr><td>h1, h2</td><td>Element</td><td>Sets heading color</td><td>Throughout the site</td></tr>
+				<tr><td>.navbar</td><td>Class</td><td>Styles the navigation bar</td><td>In the header</td></tr>
+				<tr><td>.navbar a:hover</td><td>Class</td><td>Adds hover effect to nav links</td><td>Navigation bar</td></tr>
+				<tr><td>.navbar a.active</td><td>Class</td><td>Highlights current page in nav</td><td>Navigation bar</td></tr>
+				<tr><td>div#content</td><td>ID</td><td>Adds padding and width to main content</td><td>All pages</td></tr>
+				<tr><td>div#footer</td><td>ID</td><td>Styles the footer (background, color, text)</td><td>Bottom of all pages</td></tr>
+				<tr><td>div.newsitem</td><td>Class</td><td>Adds a border and background to content box</td><td>Optional content styling</td></tr>
+				<tr><td>table.data</td><td>Class</td><td>Styles data tables with alternating rows</td><td>On the Past page</td></tr>
+				<tr><td>span.date</td><td>Element/Class</td><td>Styles dates in green and bold</td><td>News items or timelines</td></tr>
+			</table>
+			
+			<img src="images/CSSsnippet.png" alt="HTML code of CSS" width="400" style="margin-top: 20px;">
+
+
+			<h3>Navigation</h3>
+			<p>A horizontal nav bar stays consistent across all pages.<br>Hover and active styles give users feedback when navigating.</p>
+
+			<h2>Accessibility Considerations</h2>
+			<h3>Use of &lt;alt&gt; Tags</h3>
+			<p>All images include meaningful alt tags.<br>Example:<br><code>&lt;img src="images/fn.png" alt="Photo of Fortnite Llama"&gt;</code><br>This helps screen reader users understand visual content.</p>
+
+			<h3>Font Size and Spacing</h3>
+			<p>The font is readable with sufficient padding and spacing around elements to avoid clutter.</p>
+
+			<h3>Colour Contrast</h3>
+			<p>Dark text on light backgrounds ensures high readability. Purple elements are used sparingly and do not reduce visibility.</p>
+
+			<h2>How the Site Works Without CSS</h2>
+			<p>If CSS is disabled, the website remains fully functional, as all content is structured with proper HTML semantics (headings, paragraphs, lists, etc.). While the styling is removed, the navigation bar and text remain accessible and readable. This ensures usability across different browsing environments.</p>
+			<img src="images/nocss.png" alt="Website without CSS" width="400">
+			</div>
+			</div>
+
+		<div id="footer">
+			Copyright &copy; 2025 Emaan
+		</div>
+	</body>
+</html>
+
